@@ -15,13 +15,16 @@ namespace CustomerSatisfaction.Models
         #region Méthode
         public bool signerContrat()
         {
+            Client c;
             List<Client> clients;
 
+            c = new Client();
             clients = new List<Client>();
             if(clients != null)
-            {
-
-            }
+                if (bool.Parse(clients.Add(c))
+                {
+                    return true;
+                }
             return false;
         }
         #endregion
