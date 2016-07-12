@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using CustomerSatisfaction.Models;
+using CustomerSatisfaction.DAL;
 
 namespace CustomerSatisfaction
 {
@@ -42,7 +43,7 @@ namespace CustomerSatisfaction
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
         {
-            var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ApplicationDbContext>()));
+            var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<DbSatisfaction>()));
             // Configurer la logique de validation pour les noms d'utilisateur
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)
             {
