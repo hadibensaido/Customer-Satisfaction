@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CustomerSatisfaction.Models
 {
-    public class Prestations:Client
+    public abstract class Prestations
     {
         int idPrestation { get; set; }
         DateTime datePrestation { get; set; }

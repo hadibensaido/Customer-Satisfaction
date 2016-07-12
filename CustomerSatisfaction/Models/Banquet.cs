@@ -5,9 +5,9 @@ using System.Web;
 
 namespace CustomerSatisfaction.Models
 {
-    public class SousSegment
+    public class Banquet:Prestations
     {
-        int idSSegment { get; set; }
-        string libelleSSegment { get; set; }
+        public int idBanquet { get; set; }
+        public string libelleBanquet { get; set; }
     }
 }

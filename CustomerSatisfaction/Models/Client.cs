@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CustomerSatisfaction.Models
 {
-    public class Client:Segment
+    public class Client
     {
         int idClient { get; set; }
         string nomClient { get; set; }
