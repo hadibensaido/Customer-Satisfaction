@@ -202,25 +202,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Audit.cs" />
-    <Compile Include="Models\Banquet.cs" />
-    <Compile Include="Models\Client.cs" />
-    <Compile Include="Models\Compte.cs" />
-    <Compile Include="Models\Etablissement.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Invitation.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Prestations.cs" />
-    <Compile Include="Models\Profil.cs" />
-    <Compile Include="Models\Question.cs" />
-    <Compile Include="Models\Questionnaire.cs" />
-    <Compile Include="Models\Reponse.cs" />
-    <Compile Include="Models\Segment.cs" />
-    <Compile Include="Models\Sejour.cs" />
-    <Compile Include="Models\Seminaire.cs" />
-    <Compile Include="Models\SousSegment.cs" />
-    <Compile Include="Models\TypeQuestionnaire.cs" />
-    <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

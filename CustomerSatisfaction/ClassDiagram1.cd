@@ -149,41 +149,6 @@
       <FileName>Models\AccountViewModels.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CustomerSatisfaction.Models.Audit" Collapsed="true">
-    <Position X="20.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAEAAAAAA=</HashCode>
-      <FileName>Models\Audit.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Banquet" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Banquet.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Client" Collapsed="true">
-    <Position X="13.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Client.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Compte" Collapsed="true">
-    <Position X="15" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAJAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Compte.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Etablissement" Collapsed="true">
-    <Position X="20.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAA=</HashCode>
-      <FileName>Models\Etablissement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="CustomerSatisfaction.Models.ApplicationUser" Collapsed="true">
     <Position X="16.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -196,13 +161,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\IdentityModels.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Invitation" Collapsed="true">
-    <Position X="11.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>Models\Invitation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CustomerSatisfaction.Models.IndexViewModel" Collapsed="true">
@@ -259,83 +217,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\ManageViewModels.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Prestations" Collapsed="true">
-    <Position X="3.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Models\Prestations.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Profil" Collapsed="true">
-    <Position X="20.25" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Profil.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Question" Collapsed="true">
-    <Position X="7.25" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Question.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Questionnaire" Collapsed="true">
-    <Position X="9.75" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQgAAAAAAAAA=</HashCode>
-      <FileName>Models\Questionnaire.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Reponse" Collapsed="true">
-    <Position X="13.25" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAIAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Reponse.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Segment" Collapsed="true">
-    <Position X="18.5" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Segment.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Sejourl" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Sejour.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Seminaire" Collapsed="true">
-    <Position X="5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Seminaire.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.SousSegment" Collapsed="true">
-    <Position X="13.25" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
-      <FileName>Models\SousSegment.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.TypeQuestionnaire" Collapsed="true">
-    <Position X="16.75" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
-      <FileName>Models\TypeQuestionnaire.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CustomerSatisfaction.Models.Utilisateur" Collapsed="true">
-    <Position X="18.5" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Utilisateur.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
