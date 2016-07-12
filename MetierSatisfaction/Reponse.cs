@@ -10,5 +10,9 @@ namespace CustomerSatisfaction.Models
         public string commentaire { get; set; }
         public int idReponse { get; set; }
         public string reponse { get; set; }
+
+        // la question concernée
+        public int idQuestion { get; set; }
+        public virtual Question Question { get; set; }
     }
 }
