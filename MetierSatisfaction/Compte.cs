@@ -15,6 +15,7 @@ namespace MetierSatisfaction.Models
         #region Méthode
         public bool signerContrat()
         {
+            /*
             Client c;
             List<Client> clients;
 
@@ -25,8 +26,11 @@ namespace MetierSatisfaction.Models
                 {
                     return true;
                 }
+                */
             return false;
+            
         }
+
         #endregion
     }
 }
