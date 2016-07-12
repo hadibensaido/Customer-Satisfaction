@@ -9,5 +9,8 @@ namespace CustomerSatisfaction.Models
     {
         public int idEtablissement { get; set; }
         public string libelleEtablissement { get; set; }
+
+        // les différents audits d'un établissement
+        public virtual ICollection<Audit> Audits { get; set; }
     }
 }
