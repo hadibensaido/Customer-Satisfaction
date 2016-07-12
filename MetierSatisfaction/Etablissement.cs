@@ -9,5 +9,8 @@ namespace MetierSatisfaction.Models
     {
         public int idEtablissement { get; set; }
         public string libelleEtablissement { get; set; }
+        public virtual ICollection<Client> client { get; set; }
+        public virtual ICollection<Audit> audits { get; set; }
+        public virtual ICollection<Utilisateur> users { get; set; }
     }
 }

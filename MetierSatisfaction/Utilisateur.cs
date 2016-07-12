@@ -9,5 +9,6 @@ namespace MetierSatisfaction.Models
     {
         public int idUtilisateur { get; set; }
         public string nomUtilisateur { get; set; }
+        ICollection<Profil> profil { get; set; }
     }
 }
