@@ -17,10 +17,11 @@ namespace MetierSatisfaction.Models
         public int idCompte { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Veuillez renseigner le libellé du compte")]
         public string libelleCompte { get; set; }
 
         public virtual ICollection<Etablissement> etablissement { get; set; }
+        public Profil profil { get; set;}
         #endregion
 
         #region Méthode
