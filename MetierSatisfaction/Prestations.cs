@@ -10,8 +10,8 @@ namespace MetierSatisfaction.Models
     public abstract class Prestations
     {
         [Key]
-        int idPrestation { get; set; }
-        DateTime datePrestation { get; set; }
+        public int idPrestation { get; set; }
+        public DateTime datePrestation { get; set; }
 
         // Foreign key 
         [ForeignKey("Client")]
