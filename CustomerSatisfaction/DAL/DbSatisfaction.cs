@@ -24,11 +24,7 @@ namespace CustomerSatisfaction.DAL
         public DbSet<Reponse> Reponse { get; set; }
         public DbSet<Audit> Audit { get; set; }
         public DbSet<TypeQuestionnaire> TypeQuestionnaire { get; set; }
-
-
-
-
-
+        public DbSet<Prestations> Prestations { get; set; }
 
     }
 
