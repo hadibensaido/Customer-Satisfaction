@@ -5,11 +5,11 @@ using System.Web;
 
 namespace MetierSatisfaction.Models
 {
-    public delegate void EstClientEventHandler(object sender, EventArgs e);
+    public delegate void AvoirCompteEventHandler(object sender, EventArgs e);
 
     public class Compte
     {
-        public event EstClientEventHandler AvoirCompte;
+        public event AvoirCompteEventHandler AvoirCompte;
         #region ChampsCompte
         public int idCompte { get; set; }
         public string libelleCompte { get; set; }
