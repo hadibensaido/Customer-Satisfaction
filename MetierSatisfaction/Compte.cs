@@ -19,6 +19,8 @@ namespace MetierSatisfaction.Models
         [Required]
         [StringLength(50)]
         public string libelleCompte { get; set; }
+
+        public virtual ICollection<Etablissement> etablissement { get; set; }
         #endregion
 
         #region Méthode
