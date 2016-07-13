@@ -13,7 +13,7 @@ namespace MetierSatisfaction.Models
         public int idEtablissement { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Veuillez renseigner le nom de l'établissement")]
         public string libelleEtablissement { get; set; }
 
         public virtual ICollection<Client> client { get; set; }

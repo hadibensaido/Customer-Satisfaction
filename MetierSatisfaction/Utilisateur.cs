@@ -13,7 +13,7 @@ namespace MetierSatisfaction.Models
         public int idUtilisateur { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Veuillez renseigner votre nom")]
         public string nomUtilisateur { get; set; }
 
         // Navigation properties 

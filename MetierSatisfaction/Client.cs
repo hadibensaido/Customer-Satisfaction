@@ -32,5 +32,9 @@ namespace MetierSatisfaction.Models
         // Navigation properties 
         public virtual Invitation Invitation { get; set; }
 
+        // les prestations du client
+
+        public virtual ICollection<Prestations> Prestations { get; set; }
+
     }
 }
