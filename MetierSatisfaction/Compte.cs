@@ -6,6 +6,7 @@ using System.Web;
 namespace MetierSatisfaction.Models
 {
     public delegate void EstClientEventHandler(object sender, EventArgs e);
+
     public class Compte
     {
         public event EstClientEventHandler AvoirCompte;
@@ -32,7 +33,6 @@ namespace MetierSatisfaction.Models
                 return true;
             return false;  
         }
-
         #endregion
     }
 }
