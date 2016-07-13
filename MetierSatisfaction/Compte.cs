@@ -5,30 +5,32 @@ using System.Web;
 
 namespace MetierSatisfaction.Models
 {
+    public delegate void EstClientEventHandler(object sender, EventArgs e);
     public class Compte
     {
+        public event EstClientEventHandler AvoirCompte;
         #region ChampsCompte
         public int idCompte { get; set; }
         public string libelleCompte { get; set; }
         #endregion
 
         #region Méthode
+        private bool OnAvoirCompte()
+        {
+            if (AvoirCompte != null)
+            {
+                AvoirCompte(this, new EventArgs());
+                return true;
+            }
+            else
+                return false;
+        }
+
         public bool signerContrat()
         {
-            /*
-            Client c;
-            List<Client> clients;
-
-            c = new Client();
-            clients = new List<Client>();
-            if(clients != null)
-                if (bool.Parse(clients.Add(c))
-                {
-                    return true;
-                }
-                */
-            return false;
-            
+            if (OnAvoirCompte())
+                return true;
+            return false;  
         }
 
         #endregion
