@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,9 +9,12 @@ namespace MetierSatisfaction.Models
     public class Segment
     {
         // Primary key 
-        int idSegment { get; set; }
+        [Key]
+        public int idSegment { get; set; }
 
-        string libelleSegment { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string libelleSegment { get; set; }
 
         // Navigation property 
         public virtual ICollection<SousSegment> SSegments { get; set; }

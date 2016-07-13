@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,10 +10,15 @@ namespace MetierSatisfaction.Models
     public class Client
     {
         // Primary key 
-        int idClient { get; set; }
-        string nomClient { get; set; }
+        [Key]
+        public int idClient { get; set; }
+
+        [Required]
+        [StringLength(30)]
+        public string nomClient { get; set; }
 
         // Foreign key 
+        [ForeignKey("Segment")]
         public int idSegment { get; set; }
 
         // Navigation properties 
@@ -19,6 +26,7 @@ namespace MetierSatisfaction.Models
 
 
         // Foreign key 
+        [ForeignKey("Invitation")]
         public int idInvitation { get; set; }
 
         // Navigation properties 
