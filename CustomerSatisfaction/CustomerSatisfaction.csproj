@@ -174,33 +174,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607130943377_Initial.cs" />
-    <Compile Include="Migrations\201607130943377_Initial.Designer.cs">
-      <DependentUpon>201607130943377_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201607181713153_Initial.cs" />
+    <Compile Include="Migrations\201607181713153_Initial.Designer.cs">
+      <DependentUpon>201607181713153_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607130950296_Initial1.cs" />
-    <Compile Include="Migrations\201607130950296_Initial1.Designer.cs">
-      <DependentUpon>201607130950296_Initial1.cs</DependentUpon>
+    <Compile Include="Migrations\201607181732057_Ini1.cs" />
+    <Compile Include="Migrations\201607181732057_Ini1.Designer.cs">
+      <DependentUpon>201607181732057_Ini1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607131327331_Initial2.cs" />
-    <Compile Include="Migrations\201607131327331_Initial2.Designer.cs">
-      <DependentUpon>201607131327331_Initial2.cs</DependentUpon>
+    <Compile Include="Migrations\201607181936401_Ini2.cs" />
+    <Compile Include="Migrations\201607181936401_Ini2.Designer.cs">
+      <DependentUpon>201607181936401_Ini2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607131411065_Initial3.cs" />
-    <Compile Include="Migrations\201607131411065_Initial3.Designer.cs">
-      <DependentUpon>201607131411065_Initial3.cs</DependentUpon>
+    <Compile Include="Migrations\201607182208080_Ini3.cs" />
+    <Compile Include="Migrations\201607182208080_Ini3.Designer.cs">
+      <DependentUpon>201607182208080_Ini3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607131415104_Initial4.cs" />
-    <Compile Include="Migrations\201607131415104_Initial4.Designer.cs">
-      <DependentUpon>201607131415104_Initial4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607131427110_Initial5.cs" />
-    <Compile Include="Migrations\201607131427110_Initial5.Designer.cs">
-      <DependentUpon>201607131427110_Initial5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607180809501_Initial6.cs" />
-    <Compile Include="Migrations\201607180809501_Initial6.Designer.cs">
-      <DependentUpon>201607180809501_Initial6.cs</DependentUpon>
+    <Compile Include="Migrations\201607182209001_Ini4.cs" />
+    <Compile Include="Migrations\201607182209001_Ini4.Designer.cs">
+      <DependentUpon>201607182209001_Ini4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -284,26 +276,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607130943377_Initial.resx">
-      <DependentUpon>201607130943377_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201607181713153_Initial.resx">
+      <DependentUpon>201607181713153_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607130950296_Initial1.resx">
-      <DependentUpon>201607130950296_Initial1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201607181732057_Ini1.resx">
+      <DependentUpon>201607181732057_Ini1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607131327331_Initial2.resx">
-      <DependentUpon>201607131327331_Initial2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201607181936401_Ini2.resx">
+      <DependentUpon>201607181936401_Ini2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607131411065_Initial3.resx">
-      <DependentUpon>201607131411065_Initial3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201607182208080_Ini3.resx">
+      <DependentUpon>201607182208080_Ini3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607131415104_Initial4.resx">
-      <DependentUpon>201607131415104_Initial4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607131427110_Initial5.resx">
-      <DependentUpon>201607131427110_Initial5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607180809501_Initial6.resx">
-      <DependentUpon>201607180809501_Initial6.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201607182209001_Ini4.resx">
+      <DependentUpon>201607182209001_Ini4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

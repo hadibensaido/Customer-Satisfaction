@@ -13,7 +13,7 @@ namespace CustomerSatisfaction.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201607130943377_Initial"; }
+            get { return "201607181713153_Initial"; }
         }
         
         string IMigrationMetadata.Source

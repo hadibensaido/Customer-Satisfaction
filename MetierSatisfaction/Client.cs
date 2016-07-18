@@ -18,16 +18,16 @@ namespace MetierSatisfaction.Models
         public string nomClient { get; set; }
 
         // Foreign key 
-        [ForeignKey("Segment")]
-        public int idSegment { get; set; }
+        //[ForeignKey("Segment")]
+       // public int idSegment { get; set; }
 
         // Navigation properties 
         public virtual Segment Segment { get; set; }
 
 
         // Foreign key 
-        [ForeignKey("Invitation")]
-        public int idInvitation { get; set; }
+       // [ForeignKey("Invitation")]
+       // public int idInvitation { get; set; }
 
         // Navigation properties 
         public virtual Invitation Invitation { get; set; }

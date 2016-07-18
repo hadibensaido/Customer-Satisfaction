@@ -8,8 +8,8 @@ namespace CustomerSatisfaction.DAL
 {
     public class DbSatisfaction : IdentityDbContext<ApplicationUser>
     {
-        public DbSatisfaction() : base("DbSatisfaction") { }
 
+       
         public DbSet<Client> Client { get; set; }
         public DbSet<Invitation> Invitation { get; set; }
         public DbSet<Segment> Segment { get; set; }
@@ -21,9 +21,13 @@ namespace CustomerSatisfaction.DAL
         public DbSet<Audit> Audit { get; set; }
         public DbSet<TypeQuestionnaire> TypeQuestionnaire { get; set; }
         public DbSet<Prestations> Prestations { get; set; }
+        public DbSet<Banquet> Banquet { get; set; }
         public DbSet<Compte> Compte { get; set; }
+        
 
-
+        #region Constructeurs
+        public DbSatisfaction() : base("DbSatisfaction") { }
+        #endregion
     }
 
 

@@ -21,7 +21,7 @@ namespace CustomerSatisfaction.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("DbSatisfaction", throwIfV1Schema: false)
         {
         }
 

@@ -3,7 +3,7 @@ namespace CustomerSatisfaction.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial4 : DbMigration
+    public partial class Ini4 : DbMigration
     {
         public override void Up()
         {
