@@ -9,13 +9,9 @@ namespace MetierSatisfaction.Models
 {
     public class Banquet:Prestations
     {
-        [Key]
-        public int idBanquet { get; set; }
+
         public string libelleBanquet { get; set; }
 
-        [ForeignKey("Prestations")]
-        public virtual int idPrestations { get; set; }
-
-        public virtual Prestations Prestations { get; set; }
+      
     }
 }
