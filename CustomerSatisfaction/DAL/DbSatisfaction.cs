@@ -12,7 +12,7 @@ namespace CustomerSatisfaction.DAL
 {
     public class DbSatisfaction : IdentityDbContext<ApplicationUser>
     {
-        public DbSatisfaction() : base("DefaultConnection") { }
+        public DbSatisfaction() : base("DbSatisfaction") { }
 
         public DbSet<Client> Client { get; set; }
         public DbSet<Invitation> Invitation { get; set; }
@@ -28,6 +28,7 @@ namespace CustomerSatisfaction.DAL
         public DbSet<Sejour> Sejour { get; set; }
         public DbSet<Seminaire> Seminaire { get; set; }
         public DbSet<Banquet> Banquet { get; set; }
+        public DbSet<Compte> Compte { get; set; }
 
 
     }
