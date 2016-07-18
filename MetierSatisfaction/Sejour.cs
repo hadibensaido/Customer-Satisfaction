@@ -9,13 +9,6 @@ namespace MetierSatisfaction.Models
 {
     public class Sejour:Prestations
     {
-        [Key]
-        public int idSejour { get; set; }
         public int libelleSejour { get; set; }
-
-        [ForeignKey("Prestations")]
-        public virtual int idPrestations { get; set; }
-
-        public virtual Prestations Prestations { get; set; }
     }
 }

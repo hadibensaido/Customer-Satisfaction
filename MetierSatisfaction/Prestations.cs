@@ -13,11 +13,5 @@ namespace MetierSatisfaction.Models
         public int idPrestation { get; set; }
         public DateTime datePrestation { get; set; }
 
-        // Foreign key 
-        [ForeignKey("Client")]
-        public int idClient { get; set; }
-
-        // Navigation properties 
-        public virtual Client Client { get; set; }
     }
 }
