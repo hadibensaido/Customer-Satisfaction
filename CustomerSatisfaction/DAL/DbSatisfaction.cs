@@ -23,7 +23,9 @@ namespace CustomerSatisfaction.DAL
         public DbSet<Prestations> Prestations { get; set; }
         public DbSet<Banquet> Banquet { get; set; }
         public DbSet<Compte> Compte { get; set; }
-        
+        public DbSet<Seminaire> Seminaire { get; set; }
+        public DbSet<Sejour> Sejour { get; set; }
+
 
         #region Constructeurs
         public DbSatisfaction() : base("DbSatisfaction") { }

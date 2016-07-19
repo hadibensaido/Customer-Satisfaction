@@ -182,6 +182,22 @@
     <Compile Include="Migrations\201607181732057_Ini1.Designer.cs">
       <DependentUpon>201607181732057_Ini1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607191404515_ini2.cs" />
+    <Compile Include="Migrations\201607191404515_ini2.Designer.cs">
+      <DependentUpon>201607191404515_ini2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607191413103_ini3.cs" />
+    <Compile Include="Migrations\201607191413103_ini3.Designer.cs">
+      <DependentUpon>201607191413103_ini3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607191414237_ini4.cs" />
+    <Compile Include="Migrations\201607191414237_ini4.Designer.cs">
+      <DependentUpon>201607191414237_ini4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607191447582_ini5.cs" />
+    <Compile Include="Migrations\201607191447582_ini5.Designer.cs">
+      <DependentUpon>201607191447582_ini5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -269,6 +285,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607181732057_Ini1.resx">
       <DependentUpon>201607181732057_Ini1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607191404515_ini2.resx">
+      <DependentUpon>201607191404515_ini2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607191413103_ini3.resx">
+      <DependentUpon>201607191413103_ini3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607191414237_ini4.resx">
+      <DependentUpon>201607191414237_ini4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607191447582_ini5.resx">
+      <DependentUpon>201607191447582_ini5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

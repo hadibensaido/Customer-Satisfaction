@@ -28,19 +28,13 @@ namespace CustomerSatisfaction.Migrations
             //    );
             //
 
-            /*
-             
-             context.Teachers.AddOrUpdate(t => t.Id,
-                new AstonEcole.Metier.Teacher { Id = 1, Name = "Alain" },
-                new AstonEcole.Metier.Teacher { Id = 2, Name = "Carla" },
-                new AstonEcole.Metier.Teacher { Id = 3, Name = "Jean-Pierre" }
-                );
-             */
+           
 
            DateTime date1 = DateTime.Parse("05/27/2016", System.Globalization.CultureInfo.InvariantCulture);
            DateTime date2 = DateTime.Parse("06/21/2016", System.Globalization.CultureInfo.InvariantCulture);
            DateTime date3 = DateTime.Parse("07/23/2016", System.Globalization.CultureInfo.InvariantCulture);
-            MetierSatisfaction.Models.Invitation invit_1 = new MetierSatisfaction.Models.Invitation { idInvitation = 1, libelleInvitation = "Invit 1", dateEvoi = date1 };
+
+           MetierSatisfaction.Models.Invitation invit_1 = new MetierSatisfaction.Models.Invitation { idInvitation = 1, libelleInvitation = "Invit 1", dateEvoi = date1 };
            MetierSatisfaction.Models.Invitation invit_2 = new MetierSatisfaction.Models.Invitation { idInvitation = 2, libelleInvitation = "Invit 2", dateEvoi = date2 };
            MetierSatisfaction.Models.Invitation invit_3 =  new MetierSatisfaction.Models.Invitation { idInvitation = 3, libelleInvitation = "Invit 3", dateEvoi = date3 };
            context.Invitation.AddOrUpdate(i => i.idInvitation, invit_1, invit_2, invit_3);
@@ -73,24 +67,55 @@ namespace CustomerSatisfaction.Migrations
             context.Segment.AddOrUpdate(s => s.idSegment, s1, s2, s3);
 
             context.SaveChanges();
-/*
-            context.Client.AddOrUpdate(c => c.idClient,
-               new MetierSatisfaction.Models.Client { idClient = 1, nomClient = "John_1", Segment= s1, Invitation = { idInvitation = 1, libelleInvitation = "Invit 1", dateEvoi = date1 } },
-               new MetierSatisfaction.Models.Client { idClient = 2, nomClient = "John_2", Segment = s2, Invitation = { idInvitation = 2, libelleInvitation = "Invit 2", dateEvoi = date2 } },
-               new MetierSatisfaction.Models.Client { idClient = 3, nomClient = "John_3", Segment = s3, Invitation = { idInvitation = 3, libelleInvitation = "Invit 3", dateEvoi = date3 } }
-               );
 
-            /*
+
             context.Prestations.AddOrUpdate(
-                new MetierSatisfaction.Models.Banquet {idPrestation = 1, datePrestation = date1, libelleBanquet ="Banquet_1"}
+               new MetierSatisfaction.Models.Banquet   { idPrestation = 1, datePrestation = date1, libelleBanquet   = "Banquet_1" },
+               new MetierSatisfaction.Models.Banquet   { idPrestation = 2, datePrestation = date1, libelleBanquet   = "Banquet_2" },
+               new MetierSatisfaction.Models.Banquet   { idPrestation = 3, datePrestation = date1, libelleBanquet   = "Banquet_3" },
+               new MetierSatisfaction.Models.Seminaire { idPrestation = 4, datePrestation = date2, libelleSeminaire = "Séminaire_1" },
+               new MetierSatisfaction.Models.Seminaire { idPrestation = 5, datePrestation = date2, libelleSeminaire = "Séminaire_2" },
+               new MetierSatisfaction.Models.Seminaire { idPrestation = 6, datePrestation = date2, libelleSeminaire = "Séminaire_3" },
+               new MetierSatisfaction.Models.Sejour    { idPrestation = 7, datePrestation = date3, libelleSejour    = "Séjour_1" },
+               new MetierSatisfaction.Models.Sejour    { idPrestation = 8, datePrestation = date3, libelleSejour    = "Séjour_2" },
+               new MetierSatisfaction.Models.Sejour    { idPrestation = 9, datePrestation = date3, libelleSejour    = "Séjour_3" }
             );
 
-            context.SaveChanges();
-           
-            
 
-           
-*/
+            List<MetierSatisfaction.Models.Banquet> listBanquet = new List<MetierSatisfaction.Models.Banquet>();
+            List<MetierSatisfaction.Models.Seminaire> listSeminaire = new List<MetierSatisfaction.Models.Seminaire>();
+            List<MetierSatisfaction.Models.Sejour> listSejour = new List<MetierSatisfaction.Models.Sejour>();
+
+            MetierSatisfaction.Models.Client  client_1 = new MetierSatisfaction.Models.Client { idClient = 1, nomClient = "John", Segment = s1, Invitation = invit_1 };
+            listBanquet.Add(context.Banquet.Find(1));
+            listSeminaire.Add(context.Seminaire.Find(4));
+            listSejour.Add(context.Sejour.Find(7));
+            context.SaveChanges();
+
+            MetierSatisfaction.Models.Client client_2 = new MetierSatisfaction.Models.Client { idClient = 2, nomClient = "Sarah", Segment = s2, Invitation = invit_2 };
+            listBanquet.Clear();
+            listSeminaire.Clear();
+            listSejour.Clear();
+            listBanquet.Add(context.Banquet.Find(2));
+            listSeminaire.Add(context.Seminaire.Find(5));
+            listSejour.Add(context.Sejour.Find(8));
+            context.Client.AddOrUpdate(c => c.idClient, client_1                );
+            context.SaveChanges();
+
+            MetierSatisfaction.Models.Client client_3 = new MetierSatisfaction.Models.Client { idClient = 3, nomClient = "Briand", Segment = s3, Invitation = invit_3 };
+            listBanquet.Clear();
+            listSeminaire.Clear();
+            listSejour.Clear();
+            listBanquet.Add(context.Banquet.Find(3));
+            listSeminaire.Add(context.Seminaire.Find(6));
+            listSejour.Add(context.Sejour.Find(9));
+            context.Client.AddOrUpdate(c => c.idClient, client_1, client_2, client_3);
+            context.SaveChanges();
+
+
+
+
+
 
         }
     }
